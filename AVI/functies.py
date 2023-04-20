@@ -45,6 +45,10 @@ def getNumberOfSentences(text: str) -> int:
     for zinnen in text:
         if zinnen == ".":
             teller += 1
+        elif zinnen == "!":
+            teller += 1
+        elif zinnen == "?":
+            teller += 1
     return teller
 
 # opdracht 3
@@ -56,19 +60,21 @@ def getNumberOfWords(text: str) -> int:
 
 # opdracht 4
 def GetAviscore(text: str) -> int:
-    Aviscore = 0
+    aantal_woorden = getNumberOfWords(text)
+
+    AviScore = 0
     
-    if getNumberOfWords(text) <= 7:
-        Aviscore = 5
-    elif getNumberOfWords(text) == 8:
-        Aviscore = 6
-    elif getNumberOfWords(text) == 9:
-        Aviscore = 7
-    elif getNumberOfWords(text) == 10:
-        Aviscore = 8
-    elif getNumberOfWords(text) == 11:
-        Aviscore = 11
-    elif getNumberOfWords(text) > 11:
-        Aviscore = 12
+    if aantal_woorden <= 7:
+        AviScore = 5
+    elif aantal_woorden == 8:
+        AviScore = 6
+    elif aantal_woorden == 9:
+        AviScore = 7
+    elif aantal_woorden == 10:
+        AviScore = 8
+    elif aantal_woorden == 11:
+        AviScore = 11
+    elif aantal_woorden > 11:
+        AviScore = 12
     
-    return Aviscore
+    return AviScore

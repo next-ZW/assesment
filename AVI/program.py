@@ -27,7 +27,7 @@ AviScore = tk.Label(root, text=f'Avi Score:', width=10, bg='black', fg='white')
 
 calculateInput.place(x=20, y=20)   # place is one of the ways to put elements on root (window).
 calculateButton.place(x=20, y=520)
-characterLabel.place(x=180, y=560)
+characterLabel.place(x=180, y=560) 
 sentencesLabel.place(x=20, y=560)
 WordsLabel.place(x=340, y=560)
 AviScore.place(x=500, y=560)
