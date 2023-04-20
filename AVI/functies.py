@@ -52,3 +52,23 @@ def getNumberOfWords(text: str) -> int:
     help = len(text.split())
             
     return help 
+
+
+# opdracht 4
+def GetAviscore(text: str) -> int:
+    Aviscore = 0
+    
+    if getNumberOfWords(text) <= 7:
+        Aviscore = 5
+    elif getNumberOfWords(text) == 8:
+        Aviscore = 6
+    elif getNumberOfWords(text) == 9:
+        Aviscore = 7
+    elif getNumberOfWords(text) == 10:
+        Aviscore = 8
+    elif getNumberOfWords(text) == 11:
+        Aviscore = 11
+    elif getNumberOfWords(text) > 11:
+        Aviscore = 12
+    
+    return Aviscore
