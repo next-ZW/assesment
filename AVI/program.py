@@ -14,7 +14,7 @@ def calculate():
 
 
 #variables TK
-root = tk.Tk()              # create tkInter window
+root = tk.Tk()              # create tkInter window               
 root.title('Text analyser') # set title
 root.geometry('600x600')    # set dimension
 calculateInput = tk.Text(root, width = 70, height = 30, background='lightgrey')            # generate imput element
