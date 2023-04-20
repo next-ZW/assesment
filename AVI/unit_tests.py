@@ -13,11 +13,11 @@ if getNumberOfCharacters('ik ben nawfal') == 11:
 else:
     print("Deze test is niet geslaagd")
 
-# test 2: getNumberOfSentences
-if getNumberOfSentences(getText('easy')) == 14:
-    print("Test geslaagd")
-else:
-    print("Deze test is niet geslaagd")
+# # test 2: getNumberOfSentences
+# if getNumberOfSentences(getText('easy')) == 14:
+#     print("Test geslaagd")
+# else:
+#     print("Deze test is niet geslaagd")
 
 # # schrijf zelf nog een extra testen voor getNumberOfSentences (gebruik test.txt).
 

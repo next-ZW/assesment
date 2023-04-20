@@ -41,8 +41,11 @@ def getNumberOfCharacters(text: str) -> int:
 
 # opdracht 2
 def getNumberOfSentences(text: str) -> int:
-    
-    return 0
+    teller = 0 
+    for zinnen in text:
+        if zinnen == ".":
+            teller += 1
+    return teller
 
 # opdracht 3
 def getNumberOfWords(text: str) -> int:
